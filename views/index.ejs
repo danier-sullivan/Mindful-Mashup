@@ -1,0 +1,25 @@
+<%- include('./partials/header.ejs') %>
+    <div class="container">
+        <h1>List of Strategies</h1>
+
+
+
+        <ul class="strategies">
+            <% for(let i=0; i < strategies.length; i++){ %>
+                <li>
+                    <a href="/strategies/<%=strategies[i].id%>">
+                        <%=strategies[i].title;%>
+                    </a>
+                    <br>
+                    <form action="/strategies/<%=strategies[i].id%>?_method=DELETE" method="POST">
+                        <input  type="submit" value="Delete">
+                    </form>
+                    <form action="/strategies/<%= strategies[i].id %>/edit" method="GET">
+                        <button type="submit">Edit</button>
+                    </form>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>

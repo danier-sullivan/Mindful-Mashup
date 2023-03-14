@@ -1,0 +1,21 @@
+<%- include('./partials/header.ejs') %>
+
+    <div class="container">
+        <h1>
+            <%=strategy.title %>
+        </h1>
+        <span><%=strategy.description%></span> 
+        <br>
+        <span><%=strategy.contributor%></span>
+        <form action="/strategies/<%=strategy.id%>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete"/>
+            </form>
+                 
+    </div>
+    <div class="Backbutton">
+        <a href="/strategies"> Back </a>
+      
+    </div>
+  
+
+    <%- include('./partials/footer.ejs') %>

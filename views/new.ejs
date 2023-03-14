@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs') %>
+    <div class="container">
+        <h1>Add a new strategy to the list:</h1>
+        
+        <form action="/strategies" method="POST">
+            
+            <input placeholder="Title" type="text" name="title" id="title"/>
+            <input placeholder="Description" type="text" name="description" id="description"/>
+            <input placeholder="Contributor" type="text" name="contributor" id="contributor"/>
+            
+
+
+
+
+            <input type="submit" value="Add Strategy"/>
+        </form>
+    </div>
+    <div class="Backbutton">
+        <a href="/strategies"> Back </a>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
