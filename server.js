@@ -31,6 +31,11 @@ app.use(express.urlencoded({ extended: true }));
 // method override 
 // This will allow us to make DELETE and PUT requests
 app.use(methodOverride('_method'))
+//Landing Page
+app.get('/', (req,res) => {
+    res.redirect('/strategies')
+})
+//Controller
 app.use('/strategies', strategiesController)
 
 

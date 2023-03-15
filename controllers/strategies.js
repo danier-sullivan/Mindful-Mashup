@@ -6,28 +6,28 @@ const Strategy = require('../models/strategies.js')
 
 //ROUTES 
 
-//Seed Route
-router.get('/seed', (req, res) =>{
-	Strategy.create([
-		{
-            title:'Walk',
-            description:'Go out for a walk.',
-            contributor: 'Willard Smithe'
-        },
-        {
-            title:'Meditate',
-            description:'Sit Quietly.',
-            contributor: 'Steve Guy'
-        },
-        {
-            title:'Journal',
-            description:'Write in your journal.',
-            contributor:'Sally Sommers'
-        }
-	], (err, data) => {
-		res.redirect('/strategies')
-	})
-})
+// //Seed Route
+// router.get('/seed', (req, res) =>{
+// 	Strategy.create([
+// 		{
+//             title:'Walk',
+//             description:'Go out for a walk.',
+//             contributor: 'Willard Smithe'
+//         },
+//         {
+//             title:'Meditate',
+//             description:'Sit Quietly.',
+//             contributor: 'Steve Guy'
+//         },
+//         {
+//             title:'Journal',
+//             description:'Write in your journal.',
+//             contributor:'Sally Sommers'
+//         }
+// 	], (err, data) => {
+// 		res.redirect('/strategies')
+// 	})
+// })
 
 // INDEX ROUTE
 router.get('/', (req, res) => {
