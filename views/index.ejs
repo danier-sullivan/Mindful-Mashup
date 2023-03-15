@@ -1,6 +1,26 @@
-<%- include('./partials/header.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Mashup</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <nav>
+        <a href="/strategies/new">Create New </a> | 
+        <a href="/strategies">Home</a>
+    </nav>
+</head>
+
+<body>
+    <header>
+        <div class="headerImage" ></div>
+    </header>
+   
     <div class="container">
-        <h1>List of Strategies</h1>
+        <h1>Strategies</h1>
 
 
 
@@ -11,12 +31,7 @@
                         <%=strategies[i].title;%>
                     </a>
                     <br>
-                    <form action="/strategies/<%=strategies[i].id%>?_method=DELETE" method="POST">
-                        <input  type="submit" value="Delete">
-                    </form>
-                    <form action="/strategies/<%= strategies[i].id %>/edit" method="GET">
-                        <button type="submit">Edit</button>
-                    </form>
+                  
                 </li>
                 <% } %>
         </ul>

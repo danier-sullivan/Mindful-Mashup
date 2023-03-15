@@ -4,11 +4,14 @@
         <h1>
             <%=strategy.title %>
         </h1>
-        <span><%=strategy.description%></span> 
+        <div class="description"><%=strategy.description%></div> 
         <br>
-        <span><%=strategy.contributor%></span>
+        <div class="contributor">Contributor: <%=strategy.contributor%></div>
         <form action="/strategies/<%=strategy.id%>?_method=DELETE" method="POST">
             <input type="submit" value="Delete"/>
+            </form>
+            <form action="/strategies/<%= strategy.id %>/edit" method="GET">
+                <button type="submit">Edit</button>
             </form>
                  
     </div>

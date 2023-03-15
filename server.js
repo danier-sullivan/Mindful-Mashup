@@ -23,6 +23,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 
 
 // Middleware
+app.use(express.static('public'))
 //Body parser: Add JSON data from request to the request object
 app.use(express.json())
 // Body parser middleware: give us access to req.body

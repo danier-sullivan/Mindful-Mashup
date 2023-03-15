@@ -1,0 +1,72 @@
+/* body {
+    background-color: aqua;
+} */
+
+.container {
+
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    height: 200px;
+    border-radius: 30px;
+}
+.Backbutton{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.footer{
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+opacity: .4;
+}
+nav{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.description{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contributor{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: .4;
+}
+/* .descbody{
+    resize: vertical;
+    height:100px;
+} */
+.headerImage{
+background-image: url(https://images.unsplash.com/photo-1569230919100-d3fd5e1132f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80);
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+background-size: cover;
+
+}

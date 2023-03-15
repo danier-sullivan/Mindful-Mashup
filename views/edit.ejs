@@ -5,9 +5,13 @@
 
     <form action="/strategies/<%= strategy.id %>?_method=PUT" method="POST">
       Title: <input type="text" name="title" value="<%= strategy.title %>"> <br/>
-      Description: <input type="text" name="description" value="<%= strategy.description %>"> <br/>
+      Description: <textarea class="descbody" type="text" name="description"><%=strategy.description%></textarea> <br/>
       Contributor: <input type="text" name="contributor" value="<%= strategy.contributor %>"> <br/>      
        <br/>
+       <div class="Backbutton">
+        <a href="/strategies"> Back </a>
+      
+    </div>
 
       <input type="submit" value="Edit Entry">
     </form>
