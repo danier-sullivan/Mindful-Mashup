@@ -1,6 +1,6 @@
 # Mindful-Mashup
-## Project Choice (Tell us which project you're doing!)
-> Mindful Mashup   
+## Deployed Link
+> Click here: <a href="https://mindful-mashup.herokuapp.com/" target="_blank">Mindful Mashup</a>
 
 ## Project Description
 > General App Idea/Purpose<br />
