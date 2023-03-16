@@ -77,9 +77,3 @@ background-size: cover;
 a{
     color: white;
 }
-@media only screen and (max-width: 620px) {
-    /* For mobile phones: */
-    .container {
-      width: 100%;
-    }
-  }

@@ -2,91 +2,94 @@
 
 <style>
     body {
-background-image: url("/background/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg");
-background-position: center;
-background-repeat: no-repeat;
-position: relative;
-background-size: cover;
-color:white;
-}
-fieldset {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 20px 0;
-}
-legend {
-  padding: 0px 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 500;
-  color: var(--purple);
-}
-label {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 200;
-  color: var(--bright-pink);
-  display: block;
-}
-input {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid var(--dusty-blue);
-}
-input:focus {
-  /* the outline property selects the default blue border that shows up on inputs. giving it a value of 0 gets rid of it */
-  outline: 0;
-  border: 1px solid var(--purple);
-}
-input[type="submit"] {
-  width: 100%;
-  height: 50px;
-  background: var(--purple);
-  box-shadow: 2px 2px var(--bright-blue);
-  font-family: 'Oswald';
-  font-size: 1.3em;
-  color: whitesmoke;
-  border: 1px;
-  transition: 0.2s ease-in-out;
-  border: 2px solid;
-}
-input[type="submit"]:hover {
-  cursor: pointer;
-  background: var(--bright-blue);
-  box-shadow: 2px 2px black;
-}
-textarea {
- width: 900px;
- height: 100px;
- max-width: 900px;
- max-height: 150px;
-}
-
-
+        background-image: url("/background/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+        color:white;
+    }
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    legend {
+        padding: 0px 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
+        color: var(--purple);
+    }
+    label {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 200;
+        color: var(--bright-pink);
+        display: block;
+    }
+    input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid var(--dusty-blue);
+        font-size: 1rem;
+    }
+    input:focus {
+        /* the outline property selects the default blue border that shows up on inputs. giving it a value of 0 gets rid of it */
+        outline: 0;
+        border: 1px solid var(--purple);
+    }
+    input[type="submit"] {
+        width: 100%;
+        height: 50px;
+        background: var(--purple);
+        box-shadow: 2px 2px var(--bright-blue);
+        font-family: 'Oswald';
+        font-size: 1.3em;
+        color: whitesmoke;
+        border: 1px;
+        transition: 0.2s ease-in-out;
+        border: 2px solid;
+        margin-top: 10px;
+    }
+    input[type="submit"]:hover {
+        cursor: pointer;
+        background: var(--bright-blue);
+        box-shadow: 2px 2px black;
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+        max-width: 100%;
+        max-height: 150px;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid var(--dusty-blue);
+        font-size: 1rem;
+        outline: none;
+    }
 </style>
-    <div class="container">
-        <h1>Add a new strategy to the list</h1>
+
+<div class="container">
+    <h1>Add a new strategy to the list</h1>
         
-        <form action="/strategies" method="POST">
-            <fieldset class="entry-info">
+    <form action="/strategies" method="POST">
+        <fieldset class="entry-info">
             <label for="title">Title</label>
             <input placeholder="Enter the title for your strategy here." type="text" name="title" id="title"/>
             <label for="description">Description</label>
-            <textarea  placeholder="Please enter the description here." type="text" name="description" id="description" rows="4" cols="50"></textarea>
+            <textarea placeholder="Please enter the description here." type="text" name="description" id="description" rows="4" cols="50"></textarea>
             <label for="contributor">Contributor</label>
             <input placeholder="Enter your name here." type="text" name="contributor" id="contributor"/>
-            </fieldset>
-            <!-- <legend>Entry Information</legend> -->
-            
+        </fieldset>
 
+        <input type="submit" value="Add Strategy"/>
+    </form>
+</div>
 
+<div class="Backbutton">
+    <a href="/strategies"> Back </a>
+</div>
 
-
-            <input type="submit" value="Add Strategy"/>
-        </form>
-    </div>
-    <div class="Backbutton">
-        <a href="/strategies"> Back </a>
-    </div>
-
-    <%- include('./partials/footer.ejs') %>
+<%- include('./partials/footer.ejs') %>
