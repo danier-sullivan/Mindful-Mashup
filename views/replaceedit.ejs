@@ -1,0 +1,33 @@
+<%- include('./partials/header.ejs') %>
+
+<style>
+    body {
+background-image: url("/background/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg");
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+background-size: cover;
+color:black;
+}
+</style>
+    <div class="container">
+        <h1>Add a new strategy to the list:</h1>
+        
+        <form action="/strategies" method="POST">
+            
+            <input placeholder="Title" type="text" name="title" id="title"/>
+            <textarea  placeholder="Please enter the description here" type="text" name="description" id="description" rows="4" cols="50"></textarea>
+            <input placeholder="Contributor" type="text" name="contributor" id="contributor"/>
+            
+
+
+
+
+            <input type="submit" value="Add Strategy"/>
+        </form>
+    </div>
+    <div class="Backbutton">
+        <a href="/strategies"> Back </a>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>

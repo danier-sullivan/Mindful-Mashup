@@ -1,11 +1,4 @@
-body {
-    background-image: url("/background/luca-micheli-ruWkmt3nU58-unsplash.jpg");
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    color: white;
-}
+
 
 .container {
 
@@ -18,7 +11,8 @@ body {
 h1{
     text-align: center;
     
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
 }
 h2{
     text-align: center;
@@ -54,6 +48,7 @@ nav{
 form{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+   
 }
 .description{
     text-align: center;

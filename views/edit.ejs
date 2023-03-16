@@ -1,19 +1,95 @@
 <%- include('./partials/header.ejs') %>
 
+    <style>
+        body {
+            background-image: url("/background/nattu-adnan-Ai2TRdvI6gM-unsplash.jpg");
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: cover;
+            color: white;
+        }
 
-<h1>Edit Page</h1>
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+        }
 
-    <form action="/strategies/<%= strategy.id %>?_method=PUT" method="POST">
-      Title: <input type="text" name="title" value="<%= strategy.title %>"> <br/>
-      Description: <textarea class="descbody" type="text" name="description"><%=strategy.description%></textarea> <br/>
-      Contributor: <input type="text" name="contributor" value="<%= strategy.contributor %>"> <br/>      
-       <br/>
-       <div class="Backbutton">
-        <a href="/strategies"> Back </a>
-      
+        legend {
+            padding: 0px 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 500;
+            color: var(--purple);
+        }
+
+        label {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 200;
+            color: var(--bright-pink);
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid var(--dusty-blue);
+        }
+
+        input:focus {
+            /* the outline property selects the default blue border that shows up on inputs. giving it a value of 0 gets rid of it */
+            outline: 0;
+            border: 1px solid var(--purple);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 50px;
+            background: var(--purple);
+            box-shadow: 2px 2px var(--bright-blue);
+            font-family: 'Oswald';
+            font-size: 1.3em;
+            color: whitesmoke;
+            border: 1px;
+            transition: 0.2s ease-in-out;
+            border: 2px solid;
+        }
+
+        input[type="submit"]:hover {
+            cursor: pointer;
+            background: var(--bright-blue);
+            box-shadow: 2px 2px black;
+        }
+
+        textarea {
+            width: 900px;
+            height: 100px;
+            max-width: 900px;
+            max-height: 150px;
+        }
+    </style>
+    <div class="container">
+        <h1>Edit Page</h1>
+
+        <form action="/strategies/<%= strategy.id %>?_method=PUT" method="POST">
+            <fieldset class="entry-info">
+                <label for="title">Title:</label>
+                <input type="text" name="title" value="<%= strategy.title %>">
+                <label for="description">Description:</label>
+                <textarea class="descbody" type="text" name="description"><%=strategy.description%></textarea>
+                <label for="contributor">Contributor:</label>
+                <input type="text" name="contributor" value="<%= strategy.contributor %>">
+            </fieldset>
+            <input type="submit" value="Edit Entry">
+    </div>
+    <div class="Backbutton">
+        <a href="/strategies/<%= strategy.id %>"> Back </a>
+
     </div>
 
-      <input type="submit" value="Edit Entry">
+
     </form>
 
-<%- include('./partials/footer.ejs') %>
+    <%- include('./partials/footer.ejs') %>
