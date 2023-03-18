@@ -117,7 +117,7 @@ router.put('/:id', (req, res) => {
 		} else {
 			console.log(updatedStrategy)
 			// redirect to the index route 
-			res.redirect('/strategies')
+			res.redirect('/strategies/' + updatedStrategy.id)
 		}
 
 	})
