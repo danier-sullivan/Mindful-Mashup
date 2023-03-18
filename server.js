@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
 //Landing Page
 app.get('/', (req,res) => {
-    res.redirect('/strategies')
+    res.render('landing.ejs')
 })
 //Controller
 app.use('/strategies', strategiesController)

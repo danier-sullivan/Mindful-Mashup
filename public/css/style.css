@@ -80,3 +80,20 @@ a{
 .mindfulTitle{
     font-size: 80px;
 }
+.button1 {
+    background-color: black;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 1.2rem;
+  /* display: inline-block; */
+  position: relative;
+  left: 45%;
+}
+.introTitle{
+    font-size: 30px;
+    color: black;
+}
